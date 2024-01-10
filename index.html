@@ -12,18 +12,23 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(45deg, #ffcc00, #ff6699, #9933cc, #33cc33);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
         }
 
         #getWellSoon {
             font-size: 24px;
             text-align: center;
-            color: #333;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         #animationContainer {
             display: inline-block;
             animation: bounce 1s infinite alternate;
+            font-size: 48px;
+            color: #ff5757;
         }
 
         @keyframes bounce {
@@ -34,11 +39,23 @@
                 transform: translateY(-10px);
             }
         }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
 <body>
     <div id="getWellSoon">
-        <p>🌻 Spoorthy, Get Well Soon! 🌻</p>
+        <p>🌻 Spooothiiii, Get Well Soon! Am Always here for youuu! 🌻</p>
         <div id="animationContainer">🌈</div>
     </div>
 </body>
